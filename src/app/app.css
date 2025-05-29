@@ -1,0 +1,26 @@
+/* Estilo personalizado para a navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #2c3e50 !important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #34495e !important;
+    margin-right: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #3498db !important;
+  }
+  
+  /* Espaçamento para o conteúdo abaixo da navbar */
+  router-outlet + * {
+    padding: 2rem 1rem;
+  }

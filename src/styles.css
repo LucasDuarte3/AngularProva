@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilos globais */
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Espaçamento padrão para containers */
+  .container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Links sem sublinhado */
+  a {
+    text-decoration: none;
+  }
