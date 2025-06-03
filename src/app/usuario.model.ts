@@ -3,6 +3,6 @@ export class Usuario {
     nome!: string;
     sobrenome!: string;
     username!: string;
-    password!: string;
+    senha!: string;
   }
   

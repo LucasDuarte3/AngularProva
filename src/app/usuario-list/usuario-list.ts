@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule, RouterModule]
 })
 export class UsuarioListComponent implements OnInit {
-  usuario: Usuario[] = [];
+  usuarios: Usuario[] = [];
 
   constructor(private usuarioService: UsuarioService, private router: Router) {}
 
@@ -22,7 +22,7 @@ export class UsuarioListComponent implements OnInit {
 
   getUsuarios(): void {
     this.usuarioService.getUsuarios().subscribe(data => {
-      this.usuario = data;
+      this.usuarios = data;
     });
   }
 
