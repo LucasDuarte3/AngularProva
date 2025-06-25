@@ -1,0 +1,18 @@
+<div class="container livro-form">
+  <h2>Cadastrar Livro</h2>
+  <form (ngSubmit)="cadastrarLivro()">
+    <div class="form-group mb-3">
+      <label>Nome do Livro</label>
+      <input class="form-control" [(ngModel)]="form.nome" name="nome" required />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Autor</label>
+      <select class="form-control" [(ngModel)]="form.autorId" name="autorId" required>
+        <option *ngFor="let autor of autores" [value]="autor.id">{{ autor.nome }}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+  </form>
+</div>
